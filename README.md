@@ -58,20 +58,30 @@ What is origin: The file that is cloned or download from a site like github is c
 - git pull origin master/main  --> downloads from origin (github.com) into the master (local).
 
 # Conflict 
-When a part of a file is chaged/modified by two poeple at a same time, git cannot execute the push/pull comands, this is called conflict.
+When a part of a remote file is chaged/modified by two poeple at a same time, git cannot execute the push/pull comands, this is called conflict.
 
 - git remote add origin https://github.com/abbasizadeh/Git.git  --> adds remote dirctory to the repository address with the name of origin.
 
 - git remote  --> shows the remotes
 - git remote -v  --> shows the remotes with more explanations 
-- git push -u origin master  --> send the origin (remote) to the master branch
-- 
+- git push -u origin master  --> send the origin (remote) to the master branch, -u keeps the address of origin and we dont need write "origin master" for the next pushes.
 
-
-
-
-
-
+## Dealing with conflict
+We cannot push the changes to github because someone esle has made a chenge in the same file same branch same line,
+           *firt we can try to use "git pull". In this case git will try to auto merge the changes if it is possible. 
+           *if the conflict message appears, look at the git status to show where are you and what needs to be committed.
+                              it probably shows " both modified: filename.format".
+           *If we open the file, is shows the location of HEAD as follow:
+           <<<<<<< HEAD
+            Second 
+           =======
+           >>>>>>> e964917e453f0d740e65c2597dbee05e024773c9
+           from "<<<<< HEAD" to "=======" is our modifications, and from "=======" to ">>>>>>> commit name" is the other persons modifications.
+           *Now we should commit the changes manually.
+           *After modifying the file we can add, commit and push it to the origin. 
+           
+#
+         
 
 
 
