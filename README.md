@@ -2,6 +2,7 @@
 Some GIT useful commands
 
 # Git init
+- git help ... --> help
 - git init   --> Initializes Git repository in the directory
 
 - git status  --> shows the status of the repository (checks if any changes has been changed in the repository (untracked files)
@@ -117,4 +118,15 @@ first we should install GPG and create a GPG key.
 - git tag -v v2.1  --> verifying the signature
 - git commit -S -m "message"  --> signing a commit
 
+# Debugging with github and gitlab
 
+- git help blame
+- git blame 
+- git bisect start  --> start the binary search for finding the bug
+- git bisect bad CommitCode  --> specifying a commit where something goes wrong
+Then git starts seaching and brings us different commits and we should tell it if the commit is OK or doesnt work well as follows:
+   git bisect good 
+   git bisect good
+   git bisect bad
+
+# Gitlab
