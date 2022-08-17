@@ -2,16 +2,16 @@
 Some GIT useful commands
 
 # Git init
-- git init   --> Initialized Git repository in the directory
+- git init   --> Initializes Git repository in the directory
 
 - git status  --> shows the status of the repository (checks if any changes has been changed in the repository (untracked files)
 
-- git add filename.format  --> adding the new file to de repository (moving the files to the 'stage')
+- git add filename.format  --> adds the new file to de repository (moving the files to the 'stage')
 - git add -A  --> adding all the files in the repository 
 if there are files that star with the same name like 'page1.html', 'page2.html', 'page3.html'
 we can add it like this: git add page*
 
-- git commit -m 'message' --> comming the added file
+- git commit -m 'message' --> commits the added file
 if you get stuck in git bash message environment write ':wq' and press 'Enter'
 
 - git log  --> shows the commits 
@@ -31,33 +31,56 @@ In git, HEAD shows the last commit:
 # Branches 
 - git branch --> shows all the branches and the branch you're in now
 
-- git branch BranchName  --> creating a new branch
+- git branch BranchName  --> creates a new branch
 
-- git checkout BranchName --> switching to the BranchName
+- git checkout BranchName --> switches to the BranchName
 
-- git merge BranchName  --> adding the changes and modification to the master branch
+- git merge BranchName  --> adds the changes and modification to the master branch
 
 To merge a branch with master:
       1- switch to the master branch
       2- use 'merge':  git merge BranchName
       
-- git rm filename.format  --> removing a file from git system
+- git rm filename.format  --> removes a file from git system
 
-- git branch -d BranchName  --> removing the branch (BranchName) 
+- git branch -d BranchName  --> removes the branch (BranchName) 
 
 
 # GitHub
-- git clone https://github.com/abbasizadeh/Git.git  --> downloading a repo from github into your local computer
+- git clone https://github.com/abbasizadeh/Git.git  --> downloads a repo from github into your local computer
 
 What is origin: The file that is cloned or download from a site like github is called origin,
         So if you make a change in the downloaded file and write 'git status command' you will receive 
         this message: Your branch is ahead of 'origin/main' by 1 commit.
  
-- git push origin master/main  --> pushing master (local) into origin (github.com)
+- git push origin master/main  --> pushes master (local) into origin (github.com)
 
-- git pull origin master/main  --> downloading from origin (github.com) into the master (local).
+- git pull origin master/main  --> downloads from origin (github.com) into the master (local).
 
 # Conflict 
-When a part of a file is chaged/modified by two poeple at a same time, git cannot execute the push/pull comands, this is called confilict.
+When a part of a file is chaged/modified by two poeple at a same time, git cannot execute the push/pull comands, this is called conflict.
+
+- git remote add origin https://github.com/abbasizadeh/Git.git  --> adds remote dirctory to the repository address with the name of origin.
+
+- git remote  --> shows the remotes
+- git remote -v  --> shows the remotes with more explanations 
+- git push -u origin master  --> send the origin (remote) to the master branch
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
