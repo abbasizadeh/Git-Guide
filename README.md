@@ -1,5 +1,7 @@
 # Git-Guide
 Some GIT useful commands
+
+# Git init
 git init   --> Initialized Git repository in the directory
 
 git status  --> shows the status of the repository (checks if any changes has been changed in the repository (untracked files)
