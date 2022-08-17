@@ -12,6 +12,8 @@ if there are files that star with the same name like 'page1.html', 'page2.html',
 we can add it like this: git add page*
 
 - git commit -m 'message' --> commits the added file
+- git show CommitCode  --> shows what happened in the commit
+ 
 if you get stuck in git bash message environment write ':wq' and press 'Enter'
 
 - git log  --> shows the commits 
@@ -82,14 +84,25 @@ to be able to solve this we can follow the steps bellow:
            4- now we should commit the changes manually.
            5- after modifying the file we can add, commit and push it to the origin. 
            
-#
+
          
+# Tags
+When we reach a certain level in our development (like a developing a software) when can tap it. Tags can be used as the name of the versions.
+- git tag -a v3.7 -m "message"  --> tagged as version 3.7. 
+- git tag  --> shows the version.
 
+- git tag -a v1.8 CommitCode  --> write a commit message in a older versions.
 
+- git tag -l "v*"  --> shows all the tags starts with v.
 
+- git show v1.8  --> shows version 1.8.
 
+if we want to push our tags on the origin:
+- git push origin v1.8  --> adds v1.8 to the origin.
+or
+- git push origin --tags  --> adds all the tags to the origin.
 
-
+- git checkout v1.8
 
 
 
