@@ -105,7 +105,15 @@ or
 - git checkout v1.8
 
 
-
-
+# Signatures (GPG key)
+Defining a pair of keys to sign your commits. Then everyone can make sure that the commits are belong to you.
+first we should create a GPG key.
+- git config  --global user.name
+- git config --global user.signaturekey KeyCode
+- gpg --list-secret-keys --keyid-format LONG --> list of your key
+- git tag -s v2.1 -m "message"  --> tags with singing
+- git show v2.1
+- git tag -v v2.1  --> verifying the signature
+- git commit -S -m "message"  --> signing a commit
 
 
