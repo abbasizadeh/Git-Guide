@@ -2,20 +2,19 @@
 Some GIT useful commands
 
 # Git init
-git init   --> Initialized Git repository in the directory
+- git init   --> Initialized Git repository in the directory
 
-git status  --> shows the status of the repository (checks if any changes has been changed in the repository (untracked files)
+- git status  --> shows the status of the repository (checks if any changes has been changed in the repository (untracked files)
 
-git add filename.format  --> adding the new file to de repository (moving the files to the 'stage')
-git add -A  --> adding all the files in the repository 
+- git add filename.format  --> adding the new file to de repository (moving the files to the 'stage')
+- git add -A  --> adding all the files in the repository 
 if there are files that star with the same name like 'page1.html', 'page2.html', 'page3.html'
 we can add it like this: git add page*
 
-
-git commit -m 'message' --> comming the added file
+- git commit -m 'message' --> comming the added file
 if you get stuck in git bash message environment write ':wq' and press 'Enter'
 
-git log  --> shows the commits 
+- git log  --> shows the commits 
 
 In git, HEAD shows the last commit:
       git diff --> shows the difference between currnt (+++b) and old files (---a) and the location of HEAD 
@@ -42,9 +41,9 @@ To merge a branch with master:
       1- switch to the master branch
       2- use 'merge':  git merge BranchName
       
-git rm filename.format  --> removing a file from git system
+- git rm filename.format  --> removing a file from git system
 
-git branch -d BranchName  --> removing the branch (BranchName) 
+- git branch -d BranchName  --> removing the branch (BranchName) 
 
 
 # GitHub
