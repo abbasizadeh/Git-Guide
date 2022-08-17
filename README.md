@@ -30,13 +30,13 @@ In git, HEAD shows the last commit:
                                           returning the reset file to its previous state.
  
 # Branches 
-git branch --> shows all the branches and the branch you're in now
+- git branch --> shows all the branches and the branch you're in now
 
-git branch BranchName  --> creating a new branch
+- git branch BranchName  --> creating a new branch
 
-git checkout BranchName --> switching to the BranchName
+- git checkout BranchName --> switching to the BranchName
 
-git merge BranchName  --> adding the changes and modification to the master branch
+- git merge BranchName  --> adding the changes and modification to the master branch
 
 To merge a branch with master:
       1- switch to the master branch
@@ -48,15 +48,15 @@ git branch -d BranchName  --> removing the branch (BranchName)
 
 
 # GitHub
-git clone https://github.com/abbasizadeh/Git.git  --> downloading a repo from github into your local computer
+- git clone https://github.com/abbasizadeh/Git.git  --> downloading a repo from github into your local computer
 
-origin: The file that is cloned or download from a site like github is called origin,
+What is origin: The file that is cloned or download from a site like github is called origin,
         So if you make a change in the downloaded file and write 'git status command' you will receive 
         this message: Your branch is ahead of 'origin/main' by 1 commit.
  
-git push origin master/main  --> pushing master (local) into origin (github.com)
+- git push origin master/main  --> pushing master (local) into origin (github.com)
 
-git pull origin master/main  --> downloading from origin (github.com) into the master (local).
+- git pull origin master/main  --> downloading from origin (github.com) into the master (local).
 
 # Conflict 
 When a part of a file is chaged/modified by two poeple at a same time, git cannot execute the push/pull comands, this is called confilict.
