@@ -106,8 +106,9 @@ or
 
 
 # Signatures (GPG key)
-Defining a pair of keys to sign your commits. Then everyone can make sure that the commits are belong to you.
-first we should create a GPG key.
+Defining a pair of keys to sign your commits and changes. Then everyone can make sure that the commits are belong to you.
+first we should install GPG and create a GPG key.
+
 - git config  --global user.name
 - git config --global user.signaturekey KeyCode
 - gpg --list-secret-keys --keyid-format LONG --> list of your key
