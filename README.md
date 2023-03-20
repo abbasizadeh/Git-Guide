@@ -73,7 +73,7 @@ When a part of a remote file is chaged/modified by two poeple at a same time, gi
 We cannot push the changes to github because someone esle has made a chenge in the same file same branch same line,
 to be able to solve this we can follow the steps bellow:
 
-           1- frist we can try to use "git pull". In this case git will try to auto merge the changes if it is possible. 
+           1- first we can try to use "git pull". In this case git will try to auto merge the changes if it is possible. 
            2- if the conflict message appears, look at the git status to show where are you and what needs to be committed.
                               it probably shows " both modified: filename.format".
            3- if we open the file, it shows the location of HEAD as follow:
