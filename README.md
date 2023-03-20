@@ -88,7 +88,7 @@ to be able to solve this we can follow the steps bellow:
 
          
 # Tags
-When we reach a certain level in our development (like a developing a software) we can tag it. Tags can be used as the name of the versions.
+When we reach a certain level in our development (like a developing a software) we can tag it. Tags can be used to specify the version of the software.
 - git tag -a v3.7 -m "message"  --> tagged as version 3.7. 
 - git tag  --> shows the version.
 
@@ -107,7 +107,7 @@ or
 
 
 # Signatures (GPG key)
-Defining a pair of keys to sign your commits and changes. Then everyone can make sure that the commits are belong to you.
+Defining a pair of keys to sign your commits and changes. Then everyone can make sure that the commits belong to you.
 first we should install GPG and create a GPG key.
 
 - git config  --global user.name
