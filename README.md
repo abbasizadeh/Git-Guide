@@ -130,5 +130,5 @@ Then git starts seaching and brings us different commits and we should tell it i
    git bisect bad
 
 # Gitlab
-Unlike github, we can install gitlab and use it as a private repository.
-You can contribute with other developer and do fork, merge request and so on.
+Unlike github, you can use it as a private repository.
+There you can contribute to other projects and colaborate with other developers.
