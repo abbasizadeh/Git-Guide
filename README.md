@@ -5,7 +5,7 @@ Some GIT useful commands
 - git help ... --> help
 - git init   --> Initializes Git repository in the directory
 
-- git status  --> shows the status of the repository (checks if any changes has been changed in the repository (untracked files)
+- git status  --> shows the status of the repository (checks if any changes has been made in the repository (untracked files)
 
 - git add filename.format  --> adds the new file to de repository (moving the files to the 'stage')
 - git add -A  --> adding all the files in the repository 
