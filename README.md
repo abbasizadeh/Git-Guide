@@ -7,7 +7,7 @@ Some GIT useful commands
 
 - git status  --> shows the status of the repository (checks if any changes has been made in the repository (untracked files)
 
-- git add filename.format  --> adds the new file to de repository (moving the files to the 'stage')
+- git add filename.format  --> adds the new file to the repository (moving the files to the 'stage')
 - git add -A  --> adding all the files in the repository 
 if there are files that star with the same name like 'page1.html', 'page2.html', 'page3.html'
 we can add it like this: git add page*
