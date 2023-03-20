@@ -88,7 +88,7 @@ to be able to solve this we can follow the steps bellow:
 
          
 # Tags
-When we reach a certain level in our development (like a developing a software) when can tap it. Tags can be used as the name of the versions.
+When we reach a certain level in our development (like a developing a software) we can tag it. Tags can be used as the name of the versions.
 - git tag -a v3.7 -m "message"  --> tagged as version 3.7. 
 - git tag  --> shows the version.
 
